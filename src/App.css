@@ -20,3 +20,13 @@
 .App-link {
   color: #09d3ac;
 }
+
+.animal-nav *{
+  margin: 5px;
+  color: black;
+}
+
+.animal-nav *:hover, .active-link{
+  color: lime;
+  transition: all .2s;
+}
