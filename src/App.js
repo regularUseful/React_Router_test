@@ -4,6 +4,7 @@ import Cat from './cat';
 import Fish from './fish';
 import Home from './home';
 import Farm from './farm';
+import NotFound from './NotFound';
 import {Route, Switch, NavLink} from 'react-router-dom';
 import './App.css';
 
@@ -17,7 +18,7 @@ function App() {
         <Route exact path='/fish' component={Fish} />
         <Route exact path='/farm/' component={Farm} />
         <Route exact path='/farm/:animalNameOne/:animalNameTwo' component={Farm} />
-
+        <Route component={NotFound} />
       </Switch>
       <nav className="animal-nav">
         <NavLink exact activeClassName="active-link" to="/">Home</NavLink>

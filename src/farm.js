@@ -7,7 +7,7 @@ class Farm extends React.Component{
         const theUrlOne = `https://source.unsplash.com/1600x900/?${animalNameOne}`
         const theUrlTwo = `https://source.unsplash.com/1600x900/?${animalNameTwo}`
         console.log(animalNameOne)
-        if(this.props.match.params.animalNameOne === undefined){
+        if(this.props.match.params.animalNameOne === undefined || this.props.match.params.animalNameTwo === undefined ){
             return(
                 <h1>enter two animals in the url. e.g. "farm/AnimalOne/AnimalTwo"</h1>
             )
